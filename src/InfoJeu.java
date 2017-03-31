@@ -9,19 +9,16 @@
 
 public class InfoJeu extends ArbreConnaissance{
 
-    public InfoJeu premier;
-    public InfoJeu courant;
-    public InfoJeu precedent;
-    public boolean dernierIndice;
+    public InfoJeu premierNoeud;
+    public InfoJeu noeudCourant;
+    public InfoJeu noeudPrecedent;
+    public boolean derniereReponseEtaitPositive;
 
     public InfoJeu (){
 
         super();
 
     }
-
-
-
 
 
 }

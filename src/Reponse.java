@@ -16,9 +16,6 @@ public class Reponse {
     private String reponse;
     private ImageIcon image;
     private ArrayList<Character> indice = new ArrayList<Character>();
-
-
-
     private Reponse description;
 
     /**

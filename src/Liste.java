@@ -3,5 +3,15 @@
  */
 public class Liste {
 
-    //commentaire de tests
+
+    private int nbElements;
+
+    public int getNbElements() {
+        return nbElements;
+    }
+
+    public void setNbElement(int nbElements) {
+        this.nbElements = nbElements;
+    }
+
 }
