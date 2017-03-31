@@ -7,7 +7,7 @@
  * @version mars 2017
  */
 
-public class InfoJeu {
+public class InfoJeu extends ArbreConnaissance{
 
     public InfoJeu premier;
     public InfoJeu courant;
@@ -16,7 +16,12 @@ public class InfoJeu {
 
     public InfoJeu (){
 
+        super();
 
     }
+
+
+
+
 
 }

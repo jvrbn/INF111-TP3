@@ -3,7 +3,5 @@
  */
 public class Liste {
 
-
-    public insererApres
     //commentaire de tests
 }

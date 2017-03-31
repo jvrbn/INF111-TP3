@@ -246,6 +246,7 @@ public class BdQuestionsReponses implements Serializable{
 	 * @return si la position courante pointe sur une reponse ou non
 	 */
 	public boolean reponseTrouvee(){
+
 		return infoJeu.noeudCourant.getArbreGauche() == null;
 	}
 	
