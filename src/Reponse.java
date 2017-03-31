@@ -59,7 +59,6 @@ public class Reponse {
 
 	}
 
-
 	public Liste getCheminParcouru() {
 		return 0;
 	}
