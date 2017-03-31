@@ -3,48 +3,30 @@
  */
 public class Liste {
 
+    private int nbElements;
+    private char element;
 	
-	
-	
-	public void insererApres(char reponseNegative) {
-		// TODO Auto-generated method stub
-		
+	public void insererApres(char reponse) {
+
+
+
 	}
 
 	public int getNbElements() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.nbElements;
 	}
 
 	public void setPcDebut() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	public char getElement() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.element;
 	}
 
 	public void setPcSuivant() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	
 
-
-<<<<<<< Updated upstream
-    private int nbElements;
-
-    public int getNbElements() {
-        return nbElements;
-    }
-
-    public void setNbElement(int nbElements) {
-        this.nbElements = nbElements;
-    }
-
-=======
->>>>>>> Stashed changes
 }

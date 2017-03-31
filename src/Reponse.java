@@ -31,7 +31,6 @@ public class Reponse {
 
     }
 
-<<<<<<< Updated upstream
     public ImageIcon getImage() {
         return this.image;
     }
@@ -55,21 +54,14 @@ public class Reponse {
     public void setDescription(Reponse description) {
         this.description = description;
     }
-=======
+
 	public void setChemin(Liste cheminParcouru) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	public Reponse getDescription() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	public Liste getCheminParcouru() {
-		// TODO Auto-generated method stub
-		return null;
+		return 0;
 	}
 
->>>>>>> Stashed changes
 }
