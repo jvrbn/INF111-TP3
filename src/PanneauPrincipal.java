@@ -6,10 +6,45 @@ import java.awt.*;
  */
 public class PanneauPrincipal {
 
-    public JPanel panel;
-    PanneauOuiNon panneauOuiNon;
+    private JPanel panel;
+    private PanneauOuiNon panneauOuiNon;
+    private BdQuestionsReponses bd;
+    private PanneauPrincipal principal;
+
+    JPanel panelCentre = new PanneauOuiNon(bd, principal);
+
+
+    public PanneauPrincipal(){
 
 
 
+    }
+
+    /**
+     * Met à jour le panneau principal avec la bd du cadre.
+     * et reconstruit le panneau du centre selon l'arbre de la bd.
+     *
+     * @author Pierre Bélisle
+     */
+    public void miseAJour() {
+        // Pas toujours nécessaire mais toujours fait quand même.
+        this.bd = cadreBd.getBd();
+// Il arrive au début que la bd est vide.  On crée le panneau seulement si
+// elle n'est pas vide.
+        if(!bd.estVide()){
+
+            setVisible(true);
+            creerPanCentral();
+        }
+    }
+
+    public void creerPanCentral(){
+
+        if(panneauOuiNon == null){
+
+
+        }
+
+    }
 
 }

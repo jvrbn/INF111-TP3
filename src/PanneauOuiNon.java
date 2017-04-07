@@ -5,8 +5,24 @@ import javax.swing.*;
  */
 public class PanneauOuiNon extends JPanel{
 
-    BdQuestionsReponses bd = new BdQuestionsReponses();
+    private BdQuestionsReponses bd;
+    private PanneauPrincipal principal;
     JButton oui = new JButton("Oui");
     JButton non = new JButton("Non");
+
+    public PanneauOuiNon(BdQuestionsReponses bd, PanneauPrincipal principal){
+
+        this.bd = bd;
+        this.principal = principal;
+
+    }
+
+    public void affichage(){
+
+        JFrame frame = new JFrame();
+
+
+    }
+
 
 }
