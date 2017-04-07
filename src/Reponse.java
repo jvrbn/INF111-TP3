@@ -16,7 +16,6 @@ public class Reponse {
     private String reponse;
     private ImageIcon image;
     private ArrayList<Character> indice = new ArrayList<Character>();
-    private Reponse description;
 
     /**
      * Constructeur de la classe reponse.
@@ -31,7 +30,6 @@ public class Reponse {
 
     }
 
-<<<<<<< Updated upstream
     public ImageIcon getImage() {
         return this.image;
     }
@@ -40,36 +38,25 @@ public class Reponse {
         this.image = image;
     }
 
-    public String getReponse() {
-        return reponse;
-    }
-
     public void setReponse(String reponse) {
         this.reponse = reponse;
     }
 
-    public Reponse getDescription() {
-        return description;
+    public String getDescription() {
+        return this.reponse;
     }
 
-    public void setDescription(Reponse description) {
-        this.description = description;
-    }
-=======
 	public void setChemin(Liste cheminParcouru) {
-		// TODO Auto-generated method stub
+	
 		
 	}
 
-	public Reponse getDescription() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	public Liste getCheminParcouru() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
->>>>>>> Stashed changes
+	public boolean equals(String autreReponse)
+	{
+		return reponse.equals(autreReponse);
+	}
 }
