@@ -15,7 +15,6 @@ public class Reponse {
 
     private String reponse;
     private ImageIcon image;
-    private ArrayList<Character> indice = new ArrayList<Character>();
 
     /**
      * Constructeur de la classe reponse.
@@ -52,11 +51,13 @@ public class Reponse {
 	}
 
 	public Liste getCheminParcouru() {
+
 		return null;
 	}
 
-	public boolean equals(String autreReponse)
+    public boolean equals(String autreReponse)
 	{
 		return reponse.equals(autreReponse);
 	}
+
 }

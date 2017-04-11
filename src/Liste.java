@@ -26,7 +26,6 @@ public class Liste {
 			tmp.setNext(new Maillon(reponseUtil));
 		}
 	}
-
 	/**
 	 * estVide
 	 * @return
@@ -40,8 +39,7 @@ public class Liste {
 	}
 
 	public void setPcDebut() {
-		// TODO Auto-generated method stub
-		
+        this.nbElements=0;
 	}
 
 	public char getElement() throws Exception{
@@ -53,17 +51,9 @@ public class Liste {
 		Maillon tmp = this.head;
 		return tmp.getValeur();
 	}
-
-	public void setPcSuivant() {
-		// TODO Auto-generated method stub
-		
-	}
-
 	
-
-
-
-  
-
+	public void setPcSuivant() {
+		this.nbElements++;
+	}
 
 }
