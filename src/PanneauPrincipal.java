@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -63,3 +64,14 @@ if(!bd.estVide()){
 	
 	
 }
+=======
+import javax.swing.*;
+
+/**
+ * Created by Javier on 2017-04-12.
+ */
+public class PanneauPrincipal {
+
+    private JPanel panel;
+}
+>>>>>>> origin/master
