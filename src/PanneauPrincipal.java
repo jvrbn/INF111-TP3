@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,10 +11,13 @@ import javax.swing.*;
  *
  */
 
-public class PanneauPrincipal {
+public class PanneauPrincipal extends JPanel{
 
-	private final BdQuestionsReponses bd;
-	private final PanneauPrincipal pp;
+	private BdQuestionsReponses bd;
+	private PanneauPrincipal pp;
+	private PanneauOuiNon panOuiNon;
+	
+	
 	
 public PanneauPrincipal(BdQuestionsReponses bd,PanneauPrincipal pp){
 		
@@ -31,7 +33,7 @@ public static void main(String[] args){
             public void run() {
             	
             	
-               // createAndShowGUI();
+               
                 
                 
             }
@@ -46,7 +48,7 @@ public static void main(String[] args){
          */
 public void miseAJour() {
 // Pas toujours nécessaire mais toujours fait quand même.
-this.bd = cadreBd.getBd();
+//this.bd = cadreBd.getBd();
 //Il arrive au début que la bd est vide.  On crée le panneau seulement si 
 //elle n'est pas vide.
 if(!bd.estVide()){
@@ -56,22 +58,23 @@ if(!bd.estVide()){
     }        
 }
 
+public void creerPanCentral(){
 	
-	
-	
-	
-	
-	
+	if(panOuiNon != null)
+	{
+		JPanel panCentral = new JPanel();
+		
+	}
+	else{
+		
+		
+	}
 	
 }
-=======
-import javax.swing.*;
+	
+	
+	
 
-/**
- * Created by Javier on 2017-04-12.
- */
-public class PanneauPrincipal {
-
-    private JPanel panel;
+	
 }
->>>>>>> origin/master
+

@@ -13,6 +13,13 @@ import javax.swing.*;
  */
 
 public class PanneauReponse extends PanneauOuiNon {
+
+	
+	
+	public PanneauReponse(BdQuestionsReponses bd, PanneauPrincipal principal) {
+		super(bd, principal);
+	}
+	
 	 
 	 
 }

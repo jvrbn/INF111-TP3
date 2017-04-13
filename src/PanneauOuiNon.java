@@ -11,66 +11,10 @@ import javax.swing.*;
  *
  */
 
-<<<<<<< HEAD
+
 public class PanneauOuiNon extends JPanel{
 
-	private final BdQuestionsReponses bd;
-	private final PanneauPrincipal pp;
-	
-	public PanneauOuiNon(BdQuestionsReponses bd,PanneauPrincipal pp){
-		
-		this.bd= bd;
-		this.pp=pp;
-	}
-	
-	public void ajoute(){
-		
-		
-	JButton boui = new JButton("OUI"); 
-	JButton bnon = new JButton("NON"); 
-	
-	boui.addActionListener(new ActionListener() {
-		
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			
-			
-		}
-	});
-	
-	bnon.addActionListener(new ActionListener() {
-		
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			
-			
-		}
-	});
-	
-	
-	
-	}
-	
-	public void remove(int index){
-		
-		
-		
-	}
-	
-	public void add(Container pane, int index){
-		
-		
-		
-		
-	}
-	
-	
-	
-	
-	
-	
-=======
-    private BdQuestionsReponses bd;
+	private BdQuestionsReponses bd;
     private PanneauPrincipal principal;
     private JButton buttonOui = new JButton();
     private JButton buttonNon = new JButton();
@@ -95,6 +39,47 @@ public class PanneauOuiNon extends JPanel{
     public void setPrincipal(PanneauPrincipal principal) {
         this.principal = principal;
     }
->>>>>>> origin/master
+
+	
+	public void ajoute(){
+		
+	
+	}
+	
+	public void remove(int index){
+		
+		
+		
+	}
+	
+	public void add(Container pane, int index){
+		
+		
+		
+		
+	}
+	
+	
+	private class MyActionListenerOui implements ActionListener{
+
+        public void actionPerformed(ActionEvent e) {
+
+            
+        }
+    }
+
+    private class MyActionListenerNon implements  ActionListener{
+
+        public void actionPerformed(ActionEvent e){
+
+
+        }
+
+    }
+	
+	
+	
+
+    
 
 }
