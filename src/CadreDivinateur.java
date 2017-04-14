@@ -1,4 +1,5 @@
 import java.awt.Container;
+import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,6 +12,25 @@ import javax.swing.*;
  *
  */
 
-public class CadreDivinateur extends JFrame{
+public class CadreDivinateur extends JFrame implements Runnable{
+	
+	private BdQuestionsReponses bd;
+    private PanneauPrincipal principal;
+    
+	public CadreDivinateur(PanneauPrincipal principal, BdQuestionsReponses bd) throws HeadlessException {
+		super();
+		this.principal = principal;
+		this.bd=bd;
+	}
+
+
+
+	@Override
+	public void run() {
+		
+		BdQuestionsReponses bd = new BdQuestionsReponses();
+		//PanneauPrincipal principal= new PanneauPrincipal();
+		
+	}
 
 }

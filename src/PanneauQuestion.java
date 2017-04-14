@@ -15,13 +15,19 @@ public class PanneauQuestion extends PanneauOuiNon{
 
     private BdQuestionsReponses bd;
     private PanneauPrincipal principal;
-
+    
+    
     public PanneauQuestion(BdQuestionsReponses bd, PanneauPrincipal principal){
 
         super(bd, principal);
-        JLabel label = new JLabel();
+        
     }
 
+    public void addQuestion(){
+    	JLabel label = new JLabel((String) bd.getLaChaineActuelle());
+
+    }
+    
     
 
 }

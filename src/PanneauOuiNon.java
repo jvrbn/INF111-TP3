@@ -69,7 +69,7 @@ public class PanneauOuiNon extends JPanel{
  
 	private void addPanneau(){
 
-       
+        
 	}
    
     
@@ -79,41 +79,39 @@ public class PanneauOuiNon extends JPanel{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
        
-        JPanel panOuiNon = new JPanel(); 
-		
+        JPanel panOuiNon = new JPanel();
 		JButton buttonOui = new JButton("OUI");
 	    JButton buttonNon = new JButton("NON");
+
+	    buttonOui.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				JOptionPane.showMessageDialog(null,"OUI");
+			}
+		});
+	    buttonNon.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				JOptionPane.showMessageDialog(null,"NON");
+			}
+		});
 	    
 	    
-        
-	   
         panOuiNon.setAlignmentX(CENTER_ALIGNMENT);
         panOuiNon.add(buttonOui);
         panOuiNon.add(buttonNon);
         frame.setSize(600, 600);
         frame.add(panOuiNon,BorderLayout.SOUTH);
-        
+        //frame.add(pane, BorderLayout.CENTER);
         
         //Display the window.
         frame.setVisible(true);
     }
-	
-	private class MyActionListenerOui implements ActionListener{
 
-        public void actionPerformed(ActionEvent e) {
-
-            
-        }
-    }
-
-    private class MyActionListenerNon implements  ActionListener{
-
-        public void actionPerformed(ActionEvent e){
-
-
-        }
-
-    }
 	
     public static void main(String[] args) {
         //Schedule a job for the event-dispatching thread:
